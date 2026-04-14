@@ -15,7 +15,6 @@
 }
 body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-size: 15px; line-height: 1.6; }
 .page { max-width: 860px; margin: 0 auto; padding: 0 24px 80px; }
-
 .hero { padding: 64px 0 48px; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 24px; }
 .hero-tag { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; color: var(--accent2); text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
 .hero-tag::before { content: ''; display: inline-block; width: 20px; height: 1px; background: var(--accent2); }
@@ -25,19 +24,16 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
 .hero-stats { display: flex; flex-direction: column; gap: 12px; text-align: right; }
 .stat-item { font-family: var(--mono); font-size: 11px; color: var(--ink3); letter-spacing: 0.06em; }
 .stat-item strong { display: block; font-family: var(--serif); font-size: 32px; font-weight: 400; color: var(--accent); line-height: 1; margin-bottom: 2px; }
-
 .nav-strip { display: flex; border-bottom: 1px solid var(--rule); }
 .nav-btn { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; padding: 16px 20px; border: none; background: none; cursor: pointer; color: var(--ink3); border-bottom: 2px solid transparent; white-space: nowrap; }
 .nav-btn:hover { color: var(--ink); }
 .nav-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
-
 .section { display: none; padding: 48px 0 0; }
 .section.visible { display: block; }
 .section-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink3); margin-bottom: 8px; }
 .section-title { font-family: var(--serif); font-size: 32px; font-weight: 400; line-height: 1.2; margin-bottom: 32px; color: var(--ink); }
-
 .case-grid { display: grid; gap: 24px; }
-.case-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
+.case-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; transition: transform 0.2s, box-shadow 0.2s; }
 .case-card:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(28,26,22,0.08); }
 .card-inner { padding: 28px 28px 0; }
 .card-num { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; color: var(--ink3); margin-bottom: 8px; }
@@ -50,16 +46,15 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
 .impact-stat strong { display: block; font-family: var(--serif); font-size: 24px; font-weight: 400; color: var(--accent); line-height: 1; margin-bottom: 2px; }
 .card-toggle { width: 100%; padding: 12px 28px; background: none; border: none; border-top: 1px solid var(--rule); font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); cursor: pointer; text-align: left; }
 .card-toggle:hover { background: var(--tag-bg); }
-
 .detail-panel { display: none; padding: 28px; background: #f0ede5; border-top: 1px solid var(--rule); }
 .detail-panel.open { display: block; }
-
 .flow-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink3); margin-bottom: 12px; }
 .flow-title { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--ink); margin-bottom: 6px; }
 .flow-desc { font-size: 13px; color: var(--ink2); margin-bottom: 20px; }
 .flow-diagram { display: flex; align-items: center; overflow-x: auto; padding-bottom: 8px; margin-bottom: 24px; }
 .flow-step { flex: 0 0 auto; width: 100px; text-align: center; }
-.flow-node { width: 56px; height: 56px; border-radius: 50%; margin: 0 auto 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+.flow-node { width: 56px; height: 56px; border-radius: 50%; margin: 0 auto 8px; display: flex; align-items: center; justify-content: center; }
+.flow-node svg { width: 22px; height: 22px; }
 .flow-node.green { background: #EAF3DE; }
 .flow-node.teal { background: #E1F5EE; }
 .flow-node.amber { background: #FDF3D0; }
@@ -68,14 +63,12 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
 .flow-step-label { font-size: 11px; font-weight: 500; color: var(--ink); line-height: 1.3; }
 .flow-step-sub { font-family: var(--mono); font-size: 9px; color: var(--ink3); }
 .flow-arrow { flex: 0 0 auto; width: 24px; text-align: center; color: var(--ink3); font-size: 14px; margin-bottom: 20px; }
-
 .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
 .detail-col h4 { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); margin-bottom: 10px; }
 .detail-col ul { padding-left: 16px; }
 .detail-col li { font-size: 13px; color: var(--ink2); line-height: 1.7; margin-bottom: 4px; }
 .detail-col p { font-size: 13px; color: var(--ink2); line-height: 1.7; }
 .code-block { background: #e8e4da; border-radius: 8px; padding: 14px 16px; font-family: var(--mono); font-size: 11px; color: var(--accent); line-height: 1.8; margin-top: 8px; white-space: pre; overflow-x: auto; }
-
 .skills-section { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
 .skill-group { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 24px; }
 .skill-group-title { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); margin-bottom: 16px; }
@@ -84,24 +77,32 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
 .skill-name { font-size: 14px; color: var(--ink); }
 .skill-bar-wrap { width: 80px; background: var(--rule); border-radius: 2px; height: 3px; }
 .skill-bar { height: 3px; background: var(--accent); border-radius: 2px; }
-
 .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start; }
 .about-body { font-size: 15px; color: var(--ink2); line-height: 1.8; }
 .about-body p { margin-bottom: 16px; }
-.about-body strong { color: var(--ink); font-weight: 500; }
 .tl-item { padding: 0 0 24px 20px; border-left: 1px solid var(--rule); position: relative; }
 .tl-item::before { content: ''; position: absolute; left: -4px; top: 6px; width: 7px; height: 7px; border-radius: 50%; background: var(--accent2); }
 .tl-date { font-family: var(--mono); font-size: 10px; color: var(--ink3); letter-spacing: 0.08em; margin-bottom: 4px; }
 .tl-role { font-size: 13px; font-weight: 500; color: var(--ink); }
 .tl-co { font-size: 12px; color: var(--ink2); }
-
-.contact-section { background: var(--accent); border-radius: 12px; padding: 48px; color: white; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 32px; margin-top: 40px; }
-.contact-section h2 { font-family: var(--serif); font-size: 32px; font-weight: 400; margin-bottom: 8px; }
-.contact-section p { font-size: 14px; opacity: 0.75; }
+.contact-section {
+  background: rgba(26, 92, 58, 0.08);
+  border: 1px solid rgba(26, 92, 58, 0.18);
+  border-radius: 12px; padding: 48px; color: var(--ink);
+  display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 32px; margin-top: 40px;
+}
+.contact-section h2 { font-family: var(--serif); font-size: 32px; font-weight: 400; margin-bottom: 8px; color: var(--accent); }
+.contact-section > div > p { font-size: 14px; color: var(--ink2); }
 .contact-links { display: flex; flex-direction: column; gap: 10px; }
-.contact-link { display: flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; color: rgba(255,255,255,0.9); text-decoration: none; background: rgba(255,255,255,0.12); padding: 10px 16px; border-radius: 8px; white-space: nowrap; }
-.contact-link:hover { background: rgba(255,255,255,0.2); }
-
+.contact-link {
+  display: flex; align-items: center; gap: 10px;
+  font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em;
+  color: var(--accent); text-decoration: none;
+  background: rgba(26, 92, 58, 0.08); border: 1px solid rgba(26, 92, 58, 0.16);
+  padding: 10px 16px; border-radius: 8px; white-space: nowrap; transition: background 0.2s;
+}
+.contact-link:hover { background: rgba(26, 92, 58, 0.15); }
+.contact-link svg { width: 14px; height: 14px; flex-shrink: 0; }
 @media (max-width: 600px) {
   .hero { grid-template-columns: 1fr; }
   .hero-stats { flex-direction: row; text-align: left; }
@@ -119,11 +120,11 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
     <div>
       <div class="hero-tag">HR Systems & AI Automation</div>
       <h1>Elsa Wong<br><em>People Technology & Systems,</em><br>AI Automation for HR</h1>
-      <p class="hero-sub">I architect AI-powered HR systems that turn manual workflows into scalable, self-running operations — connecting Workday, Google Workspace, and more, to free up HR teams for the work that matters.</p>
+      <p class="hero-sub">I architect AI-powered HR systems that turn manual workflows into scalable, self-running operations — connecting Workday, Google Workspace, and AI tools, to free up HR teams for the work that matters.</p>
     </div>
     <div class="hero-stats">
-      <div class="stat-item"><strong>70%</strong>Tier-1 HR ticket volume<br>reduced</div>
-      <div class="stat-item"><strong>80%</strong>Manual HR tasks <br>eliminated</div>
+      <div class="stat-item"><strong>70%</strong>Tier 1 HR ticket volume<br>reduced</div>
+      <div class="stat-item"><strong>80%</strong>Manual HR tasks<br>eliminated</div>
     </div>
   </div>
 
@@ -133,7 +134,6 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
     <button class="nav-btn" id="btn-about" onclick="showSection('about')">About</button>
   </div>
 
-  <!-- CASE STUDIES -->
   <div class="section visible" id="sec-work">
     <div class="section-label">Selected work</div>
     <div class="section-title">Projects I've designed & deployed</div>
@@ -142,16 +142,16 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
       <div class="case-card">
         <div class="card-inner">
           <div class="card-num">01 / End-to-End System Design</div>
-          <div class="card-title">Milestone Bonus Process and Dashboard for Temporary Workforce</div>
-          <div class="card-sub">Designed and built a multi-system bonus calculation engine from zero. Connected live Workday data to a custom-built safety scoring model, milestone eligibility logic, payroll schedule, and automated EIB generation.</div>
+          <div class="card-title">Milestone Bonus Dashboard for Temp Workforce</div>
+          <div class="card-sub">Designed and built a multi-system bonus calculation engine from zero. Connected live Workday data to a custom safety scoring model, milestone eligibility logic, payroll, and automated EIB generation.</div>
         </div>
         <div class="card-tags">
-          <span class="tag">Workday RaaS</span><span class="tag">Google Sheets</span><span class="tag">Apps Script</span><span class="tag">Claude AI</span><span class="tag">System Design</span>
+          <span class="tag">System Design</span><span class="tag">Workday RaaS</span><span class="tag">Google Apps Script</span><span class="tag">Claude</span>
         </div>
         <div class="card-impact">
           <div class="impact-stat"><strong>0→1</strong>Built from Scratch</div>
-          <div class="impact-stat"><strong>End-to-end</strong>Process</div>
-          <div class="impact-stat"><strong>Fully</strong>Automated</div>
+          <div class="impact-stat"><strong>E2E</strong>Process</div>
+          <div class="impact-stat"><strong>Full</strong>Automation</div>
         </div>
         <button class="card-toggle" onclick="toggleDetail('d1', this)">▸ View project details</button>
         <div class="detail-panel" id="d1">
@@ -159,43 +159,58 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
           <div class="flow-title">Bonus Tracking Infrastructure</div>
           <div class="flow-desc">A fully automated, multi-variable bonus system connecting Workday, a custom safety scoring model, milestone logic, and payroll execution.</div>
           <div class="flow-diagram">
-            <div class="flow-step"><div class="flow-node blue">⬡</div><div class="flow-step-label">RaaS Feed</div><div class="flow-step-sub">Live worker data via Workday</div></div>
+            <div class="flow-step">
+              <div class="flow-node blue"><svg viewBox="0 0 24 24" fill="none" stroke="#378ADD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+              <div class="flow-step-label">RaaS Feed</div><div class="flow-step-sub">Live worker data</div>
+            </div>
             <div class="flow-arrow">→</div>
-            <div class="flow-step"><div class="flow-node coral">⚠</div><div class="flow-step-label">Safety Score Sheet</div><div class="flow-step-sub">Infraction lookup</div></div>
+            <div class="flow-step">
+              <div class="flow-node coral"><svg viewBox="0 0 24 24" fill="none" stroke="#D85A30" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></div>
+              <div class="flow-step-label">Safety Score</div><div class="flow-step-sub">Infraction lookup</div>
+            </div>
             <div class="flow-arrow">→</div>
-            <div class="flow-step"><div class="flow-node amber">ƒ</div><div class="flow-step-label">Calc Engine</div><div class="flow-step-sub">Apps Script logic</div></div>
+            <div class="flow-step">
+              <div class="flow-node amber"><svg viewBox="0 0 24 24" fill="none" stroke="#BA7517" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div>
+              <div class="flow-step-label">Calc Engine</div><div class="flow-step-sub">Apps Script logic</div>
+            </div>
             <div class="flow-arrow">→</div>
-            <div class="flow-step"><div class="flow-node teal">📅</div><div class="flow-step-label">Milestone Check</div><div class="flow-step-sub">6-mo cycle logic</div></div>
+            <div class="flow-step">
+              <div class="flow-node teal"><svg viewBox="0 0 24 24" fill="none" stroke="#1D9E75" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div>
+              <div class="flow-step-label">Milestone Check</div><div class="flow-step-sub">6-mo cycle logic</div>
+            </div>
             <div class="flow-arrow">→</div>
-            <div class="flow-step"><div class="flow-node green">✉</div><div class="flow-step-label">EIB Alert</div><div class="flow-step-sub">Auto email → payroll</div></div>
+            <div class="flow-step">
+              <div class="flow-node green"><svg viewBox="0 0 24 24" fill="none" stroke="#3B6D11" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div class="flow-step-label">EIB Alert</div><div class="flow-step-sub">Auto email → payroll</div>
+            </div>
           </div>
           <div class="detail-grid">
             <div class="detail-col">
               <h4>What I built from scratch</h4>
               <ul>
                 <li>Connected Workday via RaaS to pull live temporary workforce data into Google Sheets</li>
-                <li>Built a separate safety infraction scoring logic that and calculates a weighted safety score per worker within a specific time period</li>
+                <li>Built safety infraction scoring logic that calculates a weighted safety score per worker within a specific time period</li>
                 <li>Worked with Claude to develop Apps Script logic to cross-reference worker data against safety scores and compute bonus amounts based on score thresholds</li>
                 <li>Built 6-month milestone eligibility logic — including whether a cycle resets and a second bonus round is triggered</li>
-                <li>Integrated payroll schedule so the system knows when each cycle falls relative to pay dates</li>
+                <li>Integrated payroll schedule awareness so the system knows when each cycle is relative to pay dates</li>
                 <li>Automated email notifications to generate EIB loads and execute timely payroll in Workday</li>
               </ul>
             </div>
             <div class="detail-col">
-              <h4>Full stack</h4>
+              <h4>Overview</h4>
               <div class="code-block">Workday HCM
 → RaaS (live worker feed)
 → Safety Score Sheet (custom built)
    · infraction tracking
-   · weighted score calc
+   · weighted score calculations
 → Apps Script engine
-   · cross-sheet VLOOKUP logic
+   · cross-sheet lookup logic
    · bonus threshold rules
    · 6-month milestone logic
    · payroll calendar sync
 → Automated email alerts
 → EIB load → Workday payroll</div>
-              <h4 style="margin-top:16px;">Why this is L5 work</h4>
+              <h4 style="margin-top:16px;">Impact</h4>
               <p>This required systems thinking, data modeling, API knowledge, and custom algorithm design — all applied simultaneously, with no existing infrastructure to build on. Most HRIS teams would assign this to an engineering team.</p>
             </div>
           </div>
@@ -205,11 +220,11 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
       <div class="case-card">
         <div class="card-inner">
           <div class="card-num">02 / HR Chatbot Implementation</div>
-          <div class="card-title">AI Chatbot That Cut Tier-1 HR Volume by 70%</div>
+          <div class="card-title">AI Chatbot That Reduced Tier 1 HR Ticket Volume</div>
           <div class="card-sub">Designed and deployed an AI-powered HR support chatbot to handle routine employee questions, dramatically reducing the HR team's Tier-1 support burden.</div>
         </div>
         <div class="card-tags">
-          <span class="tag">ChatGPT</span><span class="tag">Claude</span><span class="tag">Slack</span><span class="tag">Zendesk</span><span class="tag">Workflow Builder</span>
+          <span class="tag">ChatGPT</span><span class="tag">Glean Agents</span><span class="tag">Prompt Engineering</span>
         </div>
         <div class="card-impact">
           <div class="impact-stat"><strong>70%</strong>Volume reduction</div>
@@ -219,22 +234,34 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
         <div class="detail-panel" id="d2">
           <div class="flow-label">Workflow architecture</div>
           <div class="flow-title">AI HR Support System</div>
-          <div class="flow-desc">Replaced manual HR ticket triage with an intelligent routing and response system.</div>
+          <div class="flow-desc">Replaced manual HR ticketing triage with an intelligent routing and response system.</div>
           <div class="flow-diagram">
-            <div class="flow-step"><div class="flow-node blue">💬</div><div class="flow-step-label">Employee Query</div><div class="flow-step-sub">HR Chatbot</div></div>
+            <div class="flow-step">
+              <div class="flow-node blue"><svg viewBox="0 0 24 24" fill="none" stroke="#378ADD" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg></div>
+              <div class="flow-step-label">Employee Query</div><div class="flow-step-sub">HR Chatbot</div>
+            </div>
             <div class="flow-arrow">→</div>
-            <div class="flow-step"><div class="flow-node amber">⚡</div><div class="flow-step-label">AI Triage</div><div class="flow-step-sub">Intent detection</div></div>
+            <div class="flow-step">
+              <div class="flow-node amber"><svg viewBox="0 0 24 24" fill="none" stroke="#BA7517" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+              <div class="flow-step-label">AI Triage</div><div class="flow-step-sub">Intent detection</div>
+            </div>
             <div class="flow-arrow">→</div>
-            <div class="flow-step"><div class="flow-node green">✓</div><div class="flow-step-label">Auto-Resolve</div><div class="flow-step-sub">Tier-1 handled</div></div>
+            <div class="flow-step">
+              <div class="flow-node green"><svg viewBox="0 0 24 24" fill="none" stroke="#3B6D11" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+              <div class="flow-step-label">Auto-Resolve</div><div class="flow-step-sub">Tier-1 handled</div>
+            </div>
             <div class="flow-arrow">→</div>
-            <div class="flow-step"><div class="flow-node coral">↗</div><div class="flow-step-label">Escalate</div><div class="flow-step-sub">Complex to HR</div></div>
+            <div class="flow-step">
+              <div class="flow-node coral"><svg viewBox="0 0 24 24" fill="none" stroke="#D85A30" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"/><path d="M10 14L21 3"/><path d="M21 16v5a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h5"/></svg></div>
+              <div class="flow-step-label">Escalate</div><div class="flow-step-sub">Complex to HR</div>
+            </div>
           </div>
           <div class="detail-grid">
             <div class="detail-col">
               <h4>What I built</h4>
               <ul>
                 <li>Designed the intent taxonomy and conversation flows</li>
-                <li>Integrated AI response layerr</li>
+                <li>Integrated AI response layer</li>
                 <li>Created escalation logic routing to right HR sub-team</li>
                 <li>Built feedback loop to improve response accuracy over time</li>
               </ul>
@@ -255,7 +282,7 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
       <div class="case-card">
         <div class="card-inner">
           <div class="card-num">03 / Performance Calibration</div>
-          <div class="card-title">Automated Calibration Grouping System for Company-Wide Bi-Annual Performance Reviews</div>
+          <div class="card-title">Automated Calibration Grouping System for Performance Reviews</div>
           <div class="card-sub">Eliminated the manual calibration grouping process that previously required hours of spreadsheet work each review cycle across the entire company.</div>
         </div>
         <div class="card-tags">
@@ -271,61 +298,17 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
             <div class="detail-col">
               <h4>Before</h4>
               <ul>
-                <li>HR manually grouped employees for calibration sessions in spreadsheets</li>
-                <li>Prone to errors, inconsistent group sizes, hours of prep</li>
-                <li>No real-time visibility into completion rates</li>
-              </ul>
-              <h4 style="margin-top:16px;">After</h4>
-              <ul>
-                <li>Automated grouping logic based on org structure, level, and team</li>
-                <li>Real-time Looker Studio dashboard for completion tracking</li>
-                <li>97% completion rate — highest in company history</li>
+                <li>HR team manually groups employees for calibration sessions in spreadsheets</li>
+                <li>Prone to errors, inconsistent groupings, inversion visibility, hours of prep</li>
+                <li>Manual auditing and assignments</li>
               </ul>
             </div>
             <div class="detail-col">
-              <h4>Technical design</h4>
-              <div class="code-block">Workday HCM
-→ RaaS (org data pull)
-→ Apps Script (grouping algorithm)
-→ BigQuery (data warehouse)
-→ Looker Studio (dashboard)
-→ Slack alerts (manager nudges)</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="case-card">
-        <div class="card-inner">
-          <div class="card-num">04 / Onboarding Redesign</div>
-          <div class="card-title">New Hire Onboarding Program — 99% Satisfaction Score</div>
-          <div class="card-sub">Led a full redesign of Nuro's new hire onboarding experience for the hybrid work era, achieving a near-perfect satisfaction score.</div>
-        </div>
-        <div class="card-tags">
-          <span class="tag">Workday</span><span class="tag">Docebo LMS</span><span class="tag">Articulate 360</span><span class="tag">Program Design</span>
-        </div>
-        <div class="card-impact">
-          <div class="impact-stat"><strong>99%</strong>Satisfaction, H1 2024</div>
-          <div class="impact-stat"><strong>Hybrid</strong>Model optimized</div>
-        </div>
-        <button class="card-toggle" onclick="toggleDetail('d4', this)">▸ View project details</button>
-        <div class="detail-panel" id="d4">
-          <div class="detail-grid">
-            <div class="detail-col">
-              <h4>Scope of redesign</h4>
+              <h4>After</h4>
               <ul>
-                <li>Rebuilt end-to-end from Day 0 preboarding through 90 days</li>
-                <li>Aligned program to hybrid work model — async-first, in-person moments that matter</li>
-                <li>Created scalable SOPs and documentation for cross-team consistency</li>
-              </ul>
-            </div>
-            <div class="detail-col">
-              <h4>Systems used</h4>
-              <ul>
-                <li>Docebo LMS for learning path delivery</li>
-                <li>Articulate 360 for custom e-learning modules</li>
-                <li>Workday for task management and Day 1 provisioning</li>
-                <li>Automated welcome sequences via Slack and email</li>
+                <li>Automated grouping logic and built out workflow in Google Sheets via Apps Script</li>
+                <li>Real-time grouping creations based on criteria entered into script</li>
+                <li>Fully-automated groupings creation with visibility rules baked in</li>
               </ul>
             </div>
           </div>
@@ -335,26 +318,24 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
     </div>
   </div>
 
-  <!-- SKILLS -->
   <div class="section" id="sec-skills">
     <div class="section-label">Technical capabilities</div>
-    <div class="section-title">What I bring</div>
     <div class="skills-section">
       <div class="skill-group">
-        <div class="skill-group-title">HR Systems</div>
-        <div class="skill-item"><span class="skill-name">Workday HCM</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:95%"></div></div></div>
+        <div class="skill-group-title">Systems</div>
+        <div class="skill-item"><span class="skill-name">Workday HCM, Security & Reporting</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:95%"></div></div></div>
         <div class="skill-item"><span class="skill-name">Workday Advanced Comp</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div></div>
-        <div class="skill-item"><span class="skill-name">Workday Security & Reporting</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:88%"></div></div></div>
-        <div class="skill-item"><span class="skill-name">Lattice / Culture Amp</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:80%"></div></div></div>
+        <div class="skill-item"><span class="skill-name">Lattice</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:80%"></div></div></div>
+        <div class="skill-item"><span class="skill-name">Culture Amp</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:80%"></div></div></div>
         <div class="skill-item"><span class="skill-name">Docebo LMS</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:75%"></div></div></div>
       </div>
       <div class="skill-group">
         <div class="skill-group-title">Automation & AI</div>
         <div class="skill-item"><span class="skill-name">Google Apps Script</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:92%"></div></div></div>
-        <div class="skill-item"><span class="skill-name">Claude / ChatGPT (agentic)</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div></div>
+        <div class="skill-item"><span class="skill-name">Claude</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:90%"></div></div></div>
+        <div class="skill-item"><span class="skill-name">ChatGPT</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:88%"></div></div></div>
         <div class="skill-item"><span class="skill-name">Slack Workflow Builder</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:88%"></div></div></div>
         <div class="skill-item"><span class="skill-name">Workday RaaS Integration</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:85%"></div></div></div>
-        <div class="skill-item"><span class="skill-name">Zapier / no-code tools</span><div class="skill-bar-wrap"><div class="skill-bar" style="width:78%"></div></div></div>
       </div>
       <div class="skill-group">
         <div class="skill-group-title">Analytics</div>
@@ -373,16 +354,14 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
     </div>
   </div>
 
-  <!-- ABOUT -->
   <div class="section" id="sec-about">
     <div class="section-label">Background</div>
-    <div class="section-title">Why I'm different</div>
     <div class="about-grid">
       <div class="about-body">
-        <p>I sit at the intersection of <strong>HR strategy, systems architecture, and AI automation</strong> — a rare combination that lets me go from identifying a process problem to building the technical solution, end to end.</p>
-        <p>At Nuro, I've been recognized as a <strong>leading AI contributor within the People team</strong>, driving adoption of automation tools and best practices across the org. But more than adoption — I build the infrastructure myself.</p>
-        <p>Most HR professionals can use Workday. Far fewer can configure its security model, build RaaS integrations, write Apps Script logic, and use AI to scaffold custom dashboards. <strong>I do all of that.</strong></p>
-        <p>I'm looking for a senior IC or lead role where I can scale this kind of impact — in a larger team, with more complex systems challenges, and commensurate compensation.</p>
+        <p>I sit at the intersection of HR strategy, systems architecture, and AI automation — a rare combination that lets me go from identifying a process problem to building technical solutions, end to end.</p>
+        <p>At Nuro, I've been recognized as a leading AI contributor within the People team, driving adoption of automation tools and best practices across the org. But more than adoption — I build the infrastructure myself.</p>
+        <p>Most HR professionals can use Workday. Far fewer can configure its security model, build RaaS integrations, write Apps Script logic, and use AI to scaffold custom dashboards. I do all of that.</p>
+        <p>I'm looking for a People Systems and Automation role where I can scale this kind of impact — in a larger team, with more complex systems challenges.</p>
       </div>
       <div>
         <div class="tl-item"><div class="tl-date">Jun 2024 – Present</div><div class="tl-role">People Ops & Systems Analyst</div><div class="tl-co">Nuro · Systems & Automation</div></div>
@@ -394,37 +373,38 @@ body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-
     <div class="contact-section">
       <div>
         <h2>Let's talk systems.</h2>
-        <p>Open to senior HRIS, People Systems, or HR AI Automation roles.</p>
+        <p>Open to HRIS, People Systems, and HR AI Automation roles.</p>
       </div>
       <div class="contact-links">
-        <a class="contact-link" href="/cdn-cgi/l/email-protection#36535a4557415958585176515b575f5a1855595b">✉ <span class="__cf_email__" data-cfemail="b3d6dfc0d2c4dcddddd4f3d4ded2dadf9dd0dcde">[email&#160;protected]</span></a>
-        <a class="contact-link" href="https://linkedin.com/in/elsawonng/">↗ linkedin.com/in/elsawonng</a>
-        <a class="contact-link" href="tel:5103328817">☎ 510-332-8817</a>
+        <a class="contact-link" href="/cdn-cgi/l/email-protection#f3969f8092849c9d9d94b3949e929a9fdd909c9e">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+          <span class="__cf_email__" data-cfemail="e0858c9381978f8e8e87a0878d81898cce838f8d">[email&#160;protected]</span>
+        </a>
+        <a class="contact-link" href="https://linkedin.com/in/elsawonng/" target="_blank">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          linkedin.com/in/elsawonng
+        </a>
+        <a class="contact-link" href="tel:5103328817">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8 19.79 19.79 0 01.22 2.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.06 6.06l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          510-332-8817
+        </a>
       </div>
     </div>
   </div>
 
 </div>
-
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 function showSection(id) {
   var sections = document.querySelectorAll('.section');
-  for (var i = 0; i < sections.length; i++) {
-    sections[i].classList.remove('visible');
-  }
+  for (var i = 0; i < sections.length; i++) sections[i].classList.remove('visible');
   var btns = document.querySelectorAll('.nav-btn');
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].classList.remove('active');
-  }
+  for (var i = 0; i < btns.length; i++) btns[i].classList.remove('active');
   document.getElementById('sec-' + id).classList.add('visible');
   document.getElementById('btn-' + id).classList.add('active');
 }
-
 function toggleDetail(id, btn) {
   var panel = document.getElementById(id);
   var isOpen = panel.classList.contains('open');
   var allPanels = document.querySelectorAll('.detail-panel');
   var allToggles = document.querySelectorAll('.card-toggle');
-  for (var i = 0; i < allPanels.length; i++) {
-    allPanels[i].classList.remove('open');
-  }
+  for (var i = 0; i < allPanels.length; i++) allPanels[i].classLi
