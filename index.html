@@ -3,113 +3,113 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elsa Wong — HR Systems & AI Automation</title>
+<title>Elsa Wong — People Tech, AI Automation for HR</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
 <style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  :root {
-    --bg: #F5F2EC; --surface: #FDFCF9; --ink: #1C1A16; --ink2: #5A5750; --ink3: #9A9690;
-    --accent: #1A5C3A; --accent2: #2E8B5C; --gold: #B8820A; --gold-bg: #FDF3D0; --rule: #E0DDD5;
-    --tag-bg: #EAF3DE; --tag-text: #27500A; --pill-bg: #E1F5EE; --pill-text: #0F6E56;
-    --mono: 'DM Mono', monospace; --serif: 'DM Serif Display', serif; --sans: 'Outfit', sans-serif;
-  }
-  body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-size: 15px; line-height: 1.6; min-height: 100vh; }
-  .page { max-width: 860px; margin: 0 auto; padding: 0 24px 80px; }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --bg: #F5F2EC; --surface: #FDFCF9; --ink: #1C1A16; --ink2: #5A5750; --ink3: #9A9690;
+  --accent: #1A5C3A; --accent2: #2E8B5C; --rule: #E0DDD5;
+  --tag-bg: #EAF3DE; --tag-text: #27500A; --pill-bg: #E1F5EE; --pill-text: #0F6E56;
+  --mono: 'DM Mono', monospace; --serif: 'DM Serif Display', serif; --sans: 'Outfit', sans-serif;
+}
+body { font-family: var(--sans); background: var(--bg); color: var(--ink); font-size: 15px; line-height: 1.6; }
+.page { max-width: 860px; margin: 0 auto; padding: 0 24px 80px; }
 
-  .hero { padding: 64px 0 48px; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 24px; }
-  .hero-tag { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; color: var(--accent2); text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
-  .hero-tag::before { content: ''; display: inline-block; width: 20px; height: 1px; background: var(--accent2); }
-  .hero h1 { font-family: var(--serif); font-size: clamp(36px, 6vw, 60px); font-weight: 400; line-height: 1.05; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 16px; }
-  .hero h1 em { font-style: italic; color: var(--accent); }
-  .hero-sub { font-size: 16px; color: var(--ink2); max-width: 480px; line-height: 1.7; }
-  .hero-stats { display: flex; flex-direction: column; gap: 12px; text-align: right; }
-  .stat-item { font-family: var(--mono); font-size: 11px; color: var(--ink3); letter-spacing: 0.06em; }
-  .stat-item strong { display: block; font-family: var(--serif); font-size: 32px; font-weight: 400; color: var(--accent); line-height: 1; margin-bottom: 2px; }
+.hero { padding: 64px 0 48px; border-bottom: 1px solid var(--rule); display: grid; grid-template-columns: 1fr auto; align-items: end; gap: 24px; }
+.hero-tag { font-family: var(--mono); font-size: 11px; letter-spacing: 0.12em; color: var(--accent2); text-transform: uppercase; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+.hero-tag::before { content: ''; display: inline-block; width: 20px; height: 1px; background: var(--accent2); }
+.hero h1 { font-family: var(--serif); font-size: clamp(36px, 6vw, 60px); font-weight: 400; line-height: 1.05; letter-spacing: -0.02em; color: var(--ink); margin-bottom: 16px; }
+.hero h1 em { font-style: italic; color: var(--accent); }
+.hero-sub { font-size: 16px; color: var(--ink2); max-width: 480px; line-height: 1.7; }
+.hero-stats { display: flex; flex-direction: column; gap: 12px; text-align: right; }
+.stat-item { font-family: var(--mono); font-size: 11px; color: var(--ink3); letter-spacing: 0.06em; }
+.stat-item strong { display: block; font-family: var(--serif); font-size: 32px; font-weight: 400; color: var(--accent); line-height: 1; margin-bottom: 2px; }
 
-  .nav-strip { display: flex; gap: 0; border-bottom: 1px solid var(--rule); margin-bottom: 0; overflow-x: auto; }
-  .nav-btn { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; padding: 16px 20px; border: none; background: none; cursor: pointer; color: var(--ink3); border-bottom: 2px solid transparent; white-space: nowrap; transition: color 0.2s, border-color 0.2s; }
-  .nav-btn:hover { color: var(--ink); }
-  .nav-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+.nav-strip { display: flex; border-bottom: 1px solid var(--rule); }
+.nav-btn { font-family: var(--mono); font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; padding: 16px 20px; border: none; background: none; cursor: pointer; color: var(--ink3); border-bottom: 2px solid transparent; white-space: nowrap; }
+.nav-btn:hover { color: var(--ink); }
+.nav-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
 
-  .section { display: none; padding: 48px 0 0; }
-  .section.visible { display: block; }
-  .section-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink3); margin-bottom: 8px; }
-  .section-title { font-family: var(--serif); font-size: 32px; font-weight: 400; line-height: 1.2; margin-bottom: 32px; color: var(--ink); }
+.section { display: none; padding: 48px 0 0; }
+.section.visible { display: block; }
+.section-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink3); margin-bottom: 8px; }
+.section-title { font-family: var(--serif); font-size: 32px; font-weight: 400; line-height: 1.2; margin-bottom: 32px; color: var(--ink); }
 
-  .case-grid { display: grid; gap: 24px; }
-  .case-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
-  .case-card:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(28,26,22,0.08); }
-  .card-header { padding: 28px 28px 0; display: grid; grid-template-columns: 1fr auto; align-items: start; gap: 16px; }
-  .card-num { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; color: var(--ink3); margin-bottom: 8px; }
-  .card-title { font-family: var(--serif); font-size: 22px; font-weight: 400; line-height: 1.25; color: var(--ink); margin-bottom: 10px; }
-  .card-sub { font-size: 14px; color: var(--ink2); line-height: 1.6; }
-  .card-tags { display: flex; flex-wrap: wrap; gap: 6px; padding: 16px 28px; }
-  .tag { font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; background: var(--tag-bg); color: var(--tag-text); padding: 4px 10px; border-radius: 4px; }
-  .card-impact { margin: 0 28px 28px; background: var(--pill-bg); border-radius: 8px; padding: 14px 18px; display: flex; gap: 24px; }
-  .impact-stat { font-family: var(--mono); font-size: 10px; color: var(--pill-text); letter-spacing: 0.06em; }
-  .impact-stat strong { display: block; font-family: var(--serif); font-size: 24px; font-weight: 400; color: var(--accent); line-height: 1; margin-bottom: 2px; }
+.case-grid { display: grid; gap: 24px; }
+.case-card { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; overflow: hidden; cursor: pointer; transition: transform 0.2s, box-shadow 0.2s; }
+.case-card:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(28,26,22,0.08); }
+.card-inner { padding: 28px 28px 0; }
+.card-num { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; color: var(--ink3); margin-bottom: 8px; }
+.card-title { font-family: var(--serif); font-size: 22px; font-weight: 400; line-height: 1.25; color: var(--ink); margin-bottom: 10px; }
+.card-sub { font-size: 14px; color: var(--ink2); line-height: 1.6; }
+.card-tags { display: flex; flex-wrap: wrap; gap: 6px; padding: 16px 28px; }
+.tag { font-family: var(--mono); font-size: 10px; letter-spacing: 0.08em; text-transform: uppercase; background: var(--tag-bg); color: var(--tag-text); padding: 4px 10px; border-radius: 4px; }
+.card-impact { margin: 0 28px 20px; background: var(--pill-bg); border-radius: 8px; padding: 14px 18px; display: flex; gap: 24px; }
+.impact-stat { font-family: var(--mono); font-size: 10px; color: var(--pill-text); letter-spacing: 0.06em; }
+.impact-stat strong { display: block; font-family: var(--serif); font-size: 24px; font-weight: 400; color: var(--accent); line-height: 1; margin-bottom: 2px; }
+.card-toggle { width: 100%; padding: 12px 28px; background: none; border: none; border-top: 1px solid var(--rule); font-family: var(--mono); font-size: 10px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--accent); cursor: pointer; text-align: left; }
+.card-toggle:hover { background: var(--tag-bg); }
 
-  .flow-section { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 32px; margin-bottom: 24px; }
-  .flow-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink3); margin-bottom: 20px; }
-  .flow-title { font-family: var(--serif); font-size: 24px; font-weight: 400; color: var(--ink); margin-bottom: 8px; }
-  .flow-desc { font-size: 14px; color: var(--ink2); margin-bottom: 28px; }
-  .flow-diagram { display: flex; align-items: center; gap: 0; overflow-x: auto; padding-bottom: 8px; }
-  .flow-step { flex: 0 0 auto; width: 120px; text-align: center; }
-  .flow-node { width: 72px; height: 72px; border-radius: 50%; margin: 0 auto 10px; display: flex; align-items: center; justify-content: center; font-size: 22px; }
-  .flow-node.green { background: #EAF3DE; }
-  .flow-node.teal { background: #E1F5EE; }
-  .flow-node.amber { background: #FDF3D0; }
-  .flow-node.blue { background: #E6F1FB; }
-  .flow-node.coral { background: #FAECE7; }
-  .flow-step-label { font-size: 11px; font-weight: 500; color: var(--ink); margin-bottom: 2px; line-height: 1.3; }
-  .flow-step-sub { font-family: var(--mono); font-size: 9px; color: var(--ink3); letter-spacing: 0.06em; }
-  .flow-arrow { flex: 0 0 auto; width: 28px; text-align: center; color: var(--ink3); font-size: 16px; margin-bottom: 20px; }
+.detail-panel { display: none; padding: 28px; background: #f0ede5; border-top: 1px solid var(--rule); }
+.detail-panel.open { display: block; }
 
-  .detail-panel { display: none; background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 32px; margin-top: -12px; margin-bottom: 24px; }
-  .detail-panel.open { display: block; }
-  .detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 20px; }
-  .detail-col h4 { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); margin-bottom: 12px; }
-  .detail-col p, .detail-col li { font-size: 14px; color: var(--ink2); line-height: 1.7; }
-  .detail-col ul { padding-left: 16px; }
-  .detail-col li { margin-bottom: 4px; }
-  .code-block { background: #F0EDE5; border-radius: 8px; padding: 14px 16px; font-family: var(--mono); font-size: 11px; color: var(--accent); line-height: 1.8; margin-top: 8px; white-space: pre; overflow-x: auto; }
-  .close-btn { float: right; background: none; border: 1px solid var(--rule); border-radius: 6px; padding: 4px 12px; font-family: var(--mono); font-size: 10px; cursor: pointer; color: var(--ink3); }
-  .close-btn:hover { background: var(--bg); }
+.flow-label { font-family: var(--mono); font-size: 10px; letter-spacing: 0.15em; text-transform: uppercase; color: var(--ink3); margin-bottom: 12px; }
+.flow-title { font-family: var(--serif); font-size: 20px; font-weight: 400; color: var(--ink); margin-bottom: 6px; }
+.flow-desc { font-size: 13px; color: var(--ink2); margin-bottom: 20px; }
+.flow-diagram { display: flex; align-items: center; overflow-x: auto; padding-bottom: 8px; margin-bottom: 24px; }
+.flow-step { flex: 0 0 auto; width: 100px; text-align: center; }
+.flow-node { width: 56px; height: 56px; border-radius: 50%; margin: 0 auto 8px; display: flex; align-items: center; justify-content: center; font-size: 18px; }
+.flow-node.green { background: #EAF3DE; }
+.flow-node.teal { background: #E1F5EE; }
+.flow-node.amber { background: #FDF3D0; }
+.flow-node.blue { background: #E6F1FB; }
+.flow-node.coral { background: #FAECE7; }
+.flow-step-label { font-size: 11px; font-weight: 500; color: var(--ink); line-height: 1.3; }
+.flow-step-sub { font-family: var(--mono); font-size: 9px; color: var(--ink3); }
+.flow-arrow { flex: 0 0 auto; width: 24px; text-align: center; color: var(--ink3); font-size: 14px; margin-bottom: 20px; }
 
-  .skills-section { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
-  .skill-group { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 24px; }
-  .skill-group-title { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); margin-bottom: 16px; }
-  .skill-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--rule); }
-  .skill-item:last-child { border-bottom: none; }
-  .skill-name { font-size: 14px; color: var(--ink); }
-  .skill-bar-wrap { width: 80px; background: var(--rule); border-radius: 2px; height: 3px; }
-  .skill-bar { height: 3px; background: var(--accent); border-radius: 2px; }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.detail-col h4 { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); margin-bottom: 10px; }
+.detail-col ul { padding-left: 16px; }
+.detail-col li { font-size: 13px; color: var(--ink2); line-height: 1.7; margin-bottom: 4px; }
+.detail-col p { font-size: 13px; color: var(--ink2); line-height: 1.7; }
+.code-block { background: #e8e4da; border-radius: 8px; padding: 14px 16px; font-family: var(--mono); font-size: 11px; color: var(--accent); line-height: 1.8; margin-top: 8px; white-space: pre; overflow-x: auto; }
 
-  .about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start; }
-  .about-body { font-size: 15px; color: var(--ink2); line-height: 1.8; }
-  .about-body p { margin-bottom: 16px; }
-  .about-body strong { color: var(--ink); font-weight: 500; }
-  .tl-item { padding: 0 0 24px 20px; border-left: 1px solid var(--rule); position: relative; }
-  .tl-item::before { content: ''; position: absolute; left: -4px; top: 6px; width: 7px; height: 7px; border-radius: 50%; background: var(--accent2); }
-  .tl-date { font-family: var(--mono); font-size: 10px; color: var(--ink3); letter-spacing: 0.08em; margin-bottom: 4px; }
-  .tl-role { font-size: 13px; font-weight: 500; color: var(--ink); }
-  .tl-co { font-size: 12px; color: var(--ink2); }
+.skills-section { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.skill-group { background: var(--surface); border: 1px solid var(--rule); border-radius: 12px; padding: 24px; }
+.skill-group-title { font-family: var(--mono); font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink3); margin-bottom: 16px; }
+.skill-item { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--rule); }
+.skill-item:last-child { border-bottom: none; }
+.skill-name { font-size: 14px; color: var(--ink); }
+.skill-bar-wrap { width: 80px; background: var(--rule); border-radius: 2px; height: 3px; }
+.skill-bar { height: 3px; background: var(--accent); border-radius: 2px; }
 
-  .contact-section { background: var(--accent); border-radius: 12px; padding: 48px; color: white; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 32px; margin-top: 40px; }
-  .contact-section h2 { font-family: var(--serif); font-size: 32px; font-weight: 400; margin-bottom: 8px; }
-  .contact-section p { font-size: 14px; opacity: 0.75; }
-  .contact-links { display: flex; flex-direction: column; gap: 10px; }
-  .contact-link { display: flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; color: rgba(255,255,255,0.9); text-decoration: none; background: rgba(255,255,255,0.12); padding: 10px 16px; border-radius: 8px; transition: background 0.2s; white-space: nowrap; }
-  .contact-link:hover { background: rgba(255,255,255,0.2); }
+.about-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 40px; align-items: start; }
+.about-body { font-size: 15px; color: var(--ink2); line-height: 1.8; }
+.about-body p { margin-bottom: 16px; }
+.about-body strong { color: var(--ink); font-weight: 500; }
+.tl-item { padding: 0 0 24px 20px; border-left: 1px solid var(--rule); position: relative; }
+.tl-item::before { content: ''; position: absolute; left: -4px; top: 6px; width: 7px; height: 7px; border-radius: 50%; background: var(--accent2); }
+.tl-date { font-family: var(--mono); font-size: 10px; color: var(--ink3); letter-spacing: 0.08em; margin-bottom: 4px; }
+.tl-role { font-size: 13px; font-weight: 500; color: var(--ink); }
+.tl-co { font-size: 12px; color: var(--ink2); }
 
-  @media (max-width: 600px) {
-    .hero { grid-template-columns: 1fr; }
-    .hero-stats { flex-direction: row; text-align: left; }
-    .detail-grid { grid-template-columns: 1fr; }
-    .skills-section { grid-template-columns: 1fr; }
-    .about-grid { grid-template-columns: 1fr; }
-    .contact-section { grid-template-columns: 1fr; }
-  }
+.contact-section { background: var(--accent); border-radius: 12px; padding: 48px; color: white; display: grid; grid-template-columns: 1fr auto; align-items: center; gap: 32px; margin-top: 40px; }
+.contact-section h2 { font-family: var(--serif); font-size: 32px; font-weight: 400; margin-bottom: 8px; }
+.contact-section p { font-size: 14px; opacity: 0.75; }
+.contact-links { display: flex; flex-direction: column; gap: 10px; }
+.contact-link { display: flex; align-items: center; gap: 10px; font-family: var(--mono); font-size: 11px; letter-spacing: 0.06em; color: rgba(255,255,255,0.9); text-decoration: none; background: rgba(255,255,255,0.12); padding: 10px 16px; border-radius: 8px; white-space: nowrap; }
+.contact-link:hover { background: rgba(255,255,255,0.2); }
+
+@media (max-width: 600px) {
+  .hero { grid-template-columns: 1fr; }
+  .hero-stats { flex-direction: row; text-align: left; }
+  .detail-grid { grid-template-columns: 1fr; }
+  .skills-section { grid-template-columns: 1fr; }
+  .about-grid { grid-template-columns: 1fr; }
+  .contact-section { grid-template-columns: 1fr; }
+}
 </style>
 </head>
 <body>
@@ -124,7 +124,6 @@
     <div class="hero-stats">
       <div class="stat-item"><strong>70%</strong>Tier-1 HR volume<br>reduced</div>
       <div class="stat-item"><strong>80%</strong>Manual processes<br>eliminated</div>
-
     </div>
   </div>
 
@@ -137,16 +136,14 @@
   <!-- CASE STUDIES -->
   <div class="section visible" id="sec-work">
     <div class="section-label">Selected work</div>
-    <div class="section-title">End-to-end systems<br>I've designed & deployed</div>
+    <div class="section-title">Projects I've designed & deployed</div>
     <div class="case-grid">
 
-      <div class="case-card" onclick="toggleDetail('d1')">
-        <div class="card-header">
-          <div>
-            <div class="card-num">01 / Bonus Tracking System</div>
-            <div class="card-title">AI-Built Compensation Dashboard for Temp Workforce</div>
-            <div class="card-sub">Designed and vibe-coded a full bonus tracking infrastructure from scratch — connecting Workday RaaS to Google Sheets, with a live dashboard and automated payroll logic.</div>
-          </div>
+      <div class="case-card">
+        <div class="card-inner">
+          <div class="card-num">01 / Bonus Tracking System</div>
+          <div class="card-title">AI-Built Compensation Dashboard for Temp Workforce</div>
+          <div class="card-sub">Designed and vibe-coded a full bonus tracking infrastructure from scratch — connecting Workday RaaS to Google Sheets, with a live dashboard and automated payroll logic.</div>
         </div>
         <div class="card-tags">
           <span class="tag">Workday RaaS</span><span class="tag">Google Sheets</span><span class="tag">Claude AI</span><span class="tag">Apps Script</span><span class="tag">Advanced Comp</span>
@@ -156,61 +153,58 @@
           <div class="impact-stat"><strong>100%</strong>Payroll accuracy</div>
           <div class="impact-stat"><strong>Automated</strong>End-to-end</div>
         </div>
-      </div>
-
-      <div class="detail-panel" id="d1">
-        <button class="close-btn" onclick="closeDetail('d1', event)">Close</button>
-        <div class="flow-label">Workflow architecture</div>
-        <div class="flow-title">Bonus Tracking Infrastructure</div>
-        <div class="flow-desc">A connected data pipeline from Workday through to payroll execution — built using Claude to design logic and scaffold the code.</div>
-        <div class="flow-diagram">
-          <div class="flow-step"><div class="flow-node blue">⬡</div><div class="flow-step-label">Workday HCM</div><div class="flow-step-sub">Source of truth</div></div>
-          <div class="flow-arrow">→</div>
-          <div class="flow-step"><div class="flow-node teal">⇄</div><div class="flow-step-label">RaaS Feed</div><div class="flow-step-sub">Live data sync</div></div>
-          <div class="flow-arrow">→</div>
-          <div class="flow-step"><div class="flow-node amber">◻</div><div class="flow-step-label">Google Sheet</div><div class="flow-step-sub">Structured data</div></div>
-          <div class="flow-arrow">→</div>
-          <div class="flow-step"><div class="flow-node green">▦</div><div class="flow-step-label">Dashboard</div><div class="flow-step-sub">Claude-built UI</div></div>
-          <div class="flow-arrow">→</div>
-          <div class="flow-step"><div class="flow-node coral">✓</div><div class="flow-step-label">Payroll Exec</div><div class="flow-step-sub">Workday writeback</div></div>
-        </div>
-        <div class="detail-grid">
-          <div class="detail-col">
-            <h4>Problem</h4>
-            <ul>
-              <li>No existing system to track bonus eligibility for temporary workers</li>
-              <li>HR team manually calculated and validated bonuses each cycle</li>
-              <li>Risk of payroll errors with no audit trail</li>
-            </ul>
-            <h4 style="margin-top:16px;">My Approach</h4>
-            <ul>
-              <li>Used Claude to vibe-code the dashboard logic and Google Apps Script automation</li>
-              <li>Connected Workday RaaS as a live data feed into a structured Google Sheet</li>
-              <li>Built business rules and eligibility logic in Apps Script</li>
-              <li>Created UI for HR to review, flag, and approve bonuses before payroll run</li>
-            </ul>
+        <button class="card-toggle" onclick="toggleDetail('d1', this)">▸ View project details</button>
+        <div class="detail-panel" id="d1">
+          <div class="flow-label">Workflow architecture</div>
+          <div class="flow-title">Bonus Tracking Infrastructure</div>
+          <div class="flow-desc">A connected data pipeline from Workday through to payroll execution — built using Claude to design logic and scaffold the code.</div>
+          <div class="flow-diagram">
+            <div class="flow-step"><div class="flow-node blue">⬡</div><div class="flow-step-label">Workday HCM</div><div class="flow-step-sub">Source of truth</div></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><div class="flow-node teal">⇄</div><div class="flow-step-label">RaaS Feed</div><div class="flow-step-sub">Live data sync</div></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><div class="flow-node amber">◻</div><div class="flow-step-label">Google Sheet</div><div class="flow-step-sub">Structured data</div></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><div class="flow-node green">▦</div><div class="flow-step-label">Dashboard</div><div class="flow-step-sub">Claude-built UI</div></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><div class="flow-node coral">✓</div><div class="flow-step-label">Payroll Exec</div><div class="flow-step-sub">Workday writeback</div></div>
           </div>
-          <div class="detail-col">
-            <h4>Stack</h4>
-            <div class="code-block">Workday HCM (RaaS endpoint)
+          <div class="detail-grid">
+            <div class="detail-col">
+              <h4>Problem</h4>
+              <ul>
+                <li>No existing system to track bonus eligibility for temporary workers</li>
+                <li>HR team manually calculated and validated bonuses each cycle</li>
+                <li>Risk of payroll errors with no audit trail</li>
+              </ul>
+              <h4 style="margin-top:16px;">My Approach</h4>
+              <ul>
+                <li>Used Claude to vibe-code the dashboard logic and Google Apps Script automation</li>
+                <li>Connected Workday RaaS as a live data feed into a structured Google Sheet</li>
+                <li>Built business rules and eligibility logic in Apps Script</li>
+                <li>Created UI for HR to review, flag, and approve bonuses before payroll run</li>
+              </ul>
+            </div>
+            <div class="detail-col">
+              <h4>Stack</h4>
+              <div class="code-block">Workday HCM (RaaS endpoint)
 → Google Sheets (structured input)
 → Apps Script (logic & automation)
 → Claude (code scaffolding)
 → Workday Advanced Comp
    (payroll execution)</div>
-            <h4 style="margin-top:16px;">What made this advanced</h4>
-            <p>Most HR professionals at Nuro couldn't build this. It required understanding Workday's RaaS API structure, designing the data model, writing Apps Script business logic, and building a dashboard — all coordinated end-to-end.</p>
+              <h4 style="margin-top:16px;">What made this advanced</h4>
+              <p>Most HR professionals couldn't build this. It required understanding Workday's RaaS API structure, designing the data model, writing Apps Script business logic, and building a dashboard — all coordinated end-to-end.</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="case-card" onclick="toggleDetail('d2')">
-        <div class="card-header">
-          <div>
-            <div class="card-num">02 / HR Chatbot Implementation</div>
-            <div class="card-title">AI Chatbot That Cut Tier-1 HR Volume by 70%</div>
-            <div class="card-sub">Designed and deployed an AI-powered HR support chatbot to handle routine employee questions, dramatically reducing the HR team's Tier-1 support burden.</div>
-          </div>
+      <div class="case-card">
+        <div class="card-inner">
+          <div class="card-num">02 / HR Chatbot Implementation</div>
+          <div class="card-title">AI Chatbot That Cut Tier-1 HR Volume by 70%</div>
+          <div class="card-sub">Designed and deployed an AI-powered HR support chatbot to handle routine employee questions, dramatically reducing the HR team's Tier-1 support burden.</div>
         </div>
         <div class="card-tags">
           <span class="tag">ChatGPT</span><span class="tag">Claude</span><span class="tag">Slack</span><span class="tag">Zendesk</span><span class="tag">Workflow Builder</span>
@@ -219,51 +213,48 @@
           <div class="impact-stat"><strong>70%</strong>Volume reduction</div>
           <div class="impact-stat"><strong>Instant</strong>Employee response time</div>
         </div>
+        <button class="card-toggle" onclick="toggleDetail('d2', this)">▸ View project details</button>
+        <div class="detail-panel" id="d2">
+          <div class="flow-label">Workflow architecture</div>
+          <div class="flow-title">AI HR Support System</div>
+          <div class="flow-desc">Replaced manual HR ticket triage with an intelligent routing and response system integrated into Slack.</div>
+          <div class="flow-diagram">
+            <div class="flow-step"><div class="flow-node blue">💬</div><div class="flow-step-label">Employee Query</div><div class="flow-step-sub">Slack or email</div></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><div class="flow-node amber">⚡</div><div class="flow-step-label">AI Triage</div><div class="flow-step-sub">Intent detection</div></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><div class="flow-node green">✓</div><div class="flow-step-label">Auto-Resolve</div><div class="flow-step-sub">Tier-1 handled</div></div>
+            <div class="flow-arrow">→</div>
+            <div class="flow-step"><div class="flow-node coral">↗</div><div class="flow-step-label">Escalate</div><div class="flow-step-sub">Complex to HR</div></div>
+          </div>
+          <div class="detail-grid">
+            <div class="detail-col">
+              <h4>What I built</h4>
+              <ul>
+                <li>Designed the intent taxonomy and conversation flows</li>
+                <li>Integrated AI response layer with Slack Workflow Builder</li>
+                <li>Created escalation logic routing to right HR sub-team</li>
+                <li>Built feedback loop to improve response accuracy over time</li>
+              </ul>
+            </div>
+            <div class="detail-col">
+              <h4>Business impact</h4>
+              <ul>
+                <li>70% reduction in Tier-1 HR support tickets</li>
+                <li>HR team reclaimed hours per week for strategic work</li>
+                <li>Employees get instant answers 24/7</li>
+                <li>Full audit trail of all HR queries for compliance</li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div class="detail-panel" id="d2">
-        <button class="close-btn" onclick="closeDetail('d2', event)">Close</button>
-        <div class="flow-label">Workflow architecture</div>
-        <div class="flow-title">AI HR Support System</div>
-        <div class="flow-desc">Replaced manual HR ticket triage with an intelligent routing and response system integrated into Slack.</div>
-        <div class="flow-diagram">
-          <div class="flow-step"><div class="flow-node blue">💬</div><div class="flow-step-label">Employee Query</div><div class="flow-step-sub">Slack or email</div></div>
-          <div class="flow-arrow">→</div>
-          <div class="flow-step"><div class="flow-node amber">⚡</div><div class="flow-step-label">AI Triage</div><div class="flow-step-sub">Intent detection</div></div>
-          <div class="flow-arrow">→</div>
-          <div class="flow-step"><div class="flow-node green">✓</div><div class="flow-step-label">Auto-Resolve</div><div class="flow-step-sub">Tier-1 handled</div></div>
-          <div class="flow-arrow">→</div>
-          <div class="flow-step"><div class="flow-node coral">↗</div><div class="flow-step-label">Escalate</div><div class="flow-step-sub">Complex to HR</div></div>
-        </div>
-        <div class="detail-grid">
-          <div class="detail-col">
-            <h4>What I built</h4>
-            <ul>
-              <li>Designed the intent taxonomy and conversation flows</li>
-              <li>Integrated AI response layer with Slack Workflow Builder</li>
-              <li>Created escalation logic routing to right HR sub-team</li>
-              <li>Built feedback loop to improve response accuracy over time</li>
-            </ul>
-          </div>
-          <div class="detail-col">
-            <h4>Business impact</h4>
-            <ul>
-              <li>70% reduction in Tier-1 HR support tickets</li>
-              <li>HR team reclaimed hours per week for strategic work</li>
-              <li>Employees get instant answers 24/7</li>
-              <li>Full audit trail of all HR queries for compliance</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="case-card" onclick="toggleDetail('d3')">
-        <div class="card-header">
-          <div>
-            <div class="card-num">03 / Performance Calibration</div>
-            <div class="card-title">Automated Calibration Grouping System for Company-Wide Reviews</div>
-            <div class="card-sub">Eliminated the manual calibration grouping process that previously required hours of spreadsheet work each review cycle across the entire company.</div>
-          </div>
+      <div class="case-card">
+        <div class="card-inner">
+          <div class="card-num">03 / Performance Calibration</div>
+          <div class="card-title">Automated Calibration Grouping System for Company-Wide Reviews</div>
+          <div class="card-sub">Eliminated the manual calibration grouping process that previously required hours of spreadsheet work each review cycle across the entire company.</div>
         </div>
         <div class="card-tags">
           <span class="tag">Workday</span><span class="tag">Apps Script</span><span class="tag">Looker Studio</span><span class="tag">BigQuery</span>
@@ -272,46 +263,41 @@
           <div class="impact-stat"><strong>97%</strong>Review completion rate</div>
           <div class="impact-stat"><strong>Eliminated</strong>Manual grouping</div>
         </div>
-      </div>
-
-      <div class="detail-panel" id="d3">
-        <button class="close-btn" onclick="closeDetail('d3', event)">Close</button>
-        <div class="flow-label">Workflow architecture</div>
-        <div class="flow-title">Performance Calibration Pipeline</div>
-        <div class="detail-grid">
-          <div class="detail-col">
-            <h4>Before</h4>
-            <ul>
-              <li>HR manually grouped employees for calibration sessions in spreadsheets</li>
-              <li>Prone to errors, inconsistent group sizes, hours of prep</li>
-              <li>No real-time visibility into completion rates</li>
-            </ul>
-            <h4 style="margin-top:16px;">After</h4>
-            <ul>
-              <li>Automated grouping logic based on org structure, level, and team</li>
-              <li>Real-time Looker Studio dashboard for completion tracking</li>
-              <li>97% completion rate — highest in company history</li>
-            </ul>
-          </div>
-          <div class="detail-col">
-            <h4>Technical design</h4>
-            <div class="code-block">Workday HCM
+        <button class="card-toggle" onclick="toggleDetail('d3', this)">▸ View project details</button>
+        <div class="detail-panel" id="d3">
+          <div class="detail-grid">
+            <div class="detail-col">
+              <h4>Before</h4>
+              <ul>
+                <li>HR manually grouped employees for calibration sessions in spreadsheets</li>
+                <li>Prone to errors, inconsistent group sizes, hours of prep</li>
+                <li>No real-time visibility into completion rates</li>
+              </ul>
+              <h4 style="margin-top:16px;">After</h4>
+              <ul>
+                <li>Automated grouping logic based on org structure, level, and team</li>
+                <li>Real-time Looker Studio dashboard for completion tracking</li>
+                <li>97% completion rate — highest in company history</li>
+              </ul>
+            </div>
+            <div class="detail-col">
+              <h4>Technical design</h4>
+              <div class="code-block">Workday HCM
 → RaaS (org data pull)
 → Apps Script (grouping algorithm)
 → BigQuery (data warehouse)
 → Looker Studio (dashboard)
 → Slack alerts (manager nudges)</div>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="case-card" onclick="toggleDetail('d4')">
-        <div class="card-header">
-          <div>
-            <div class="card-num">04 / Onboarding Redesign</div>
-            <div class="card-title">New Hire Onboarding Program — 99% Satisfaction Score</div>
-            <div class="card-sub">Led a full redesign of Nuro's new hire onboarding experience for the hybrid work era, achieving a near-perfect satisfaction score.</div>
-          </div>
+      <div class="case-card">
+        <div class="card-inner">
+          <div class="card-num">04 / Onboarding Redesign</div>
+          <div class="card-title">New Hire Onboarding Program — 99% Satisfaction Score</div>
+          <div class="card-sub">Led a full redesign of Nuro's new hire onboarding experience for the hybrid work era, achieving a near-perfect satisfaction score.</div>
         </div>
         <div class="card-tags">
           <span class="tag">Workday</span><span class="tag">Docebo LMS</span><span class="tag">Articulate 360</span><span class="tag">Program Design</span>
@@ -320,27 +306,26 @@
           <div class="impact-stat"><strong>99%</strong>Satisfaction, H1 2024</div>
           <div class="impact-stat"><strong>Hybrid</strong>Model optimized</div>
         </div>
-      </div>
-
-      <div class="detail-panel" id="d4">
-        <button class="close-btn" onclick="closeDetail('d4', event)">Close</button>
-        <div class="detail-grid">
-          <div class="detail-col">
-            <h4>Scope of redesign</h4>
-            <ul>
-              <li>Rebuilt end-to-end from Day 0 preboarding through 90 days</li>
-              <li>Aligned program to hybrid work model — async-first, in-person moments that matter</li>
-              <li>Created scalable SOPs and documentation for cross-team consistency</li>
-            </ul>
-          </div>
-          <div class="detail-col">
-            <h4>Systems used</h4>
-            <ul>
-              <li>Docebo LMS for learning path delivery</li>
-              <li>Articulate 360 for custom e-learning modules</li>
-              <li>Workday for task management and Day 1 provisioning</li>
-              <li>Automated welcome sequences via Slack and email</li>
-            </ul>
+        <button class="card-toggle" onclick="toggleDetail('d4', this)">▸ View project details</button>
+        <div class="detail-panel" id="d4">
+          <div class="detail-grid">
+            <div class="detail-col">
+              <h4>Scope of redesign</h4>
+              <ul>
+                <li>Rebuilt end-to-end from Day 0 preboarding through 90 days</li>
+                <li>Aligned program to hybrid work model — async-first, in-person moments that matter</li>
+                <li>Created scalable SOPs and documentation for cross-team consistency</li>
+              </ul>
+            </div>
+            <div class="detail-col">
+              <h4>Systems used</h4>
+              <ul>
+                <li>Docebo LMS for learning path delivery</li>
+                <li>Articulate 360 for custom e-learning modules</li>
+                <li>Workday for task management and Day 1 provisioning</li>
+                <li>Automated welcome sequences via Slack and email</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -397,21 +382,20 @@
         <p>Most HR professionals can use Workday. Far fewer can configure its security model, build RaaS integrations, write Apps Script logic, and use AI to scaffold custom dashboards. <strong>I do all of that.</strong></p>
         <p>I'm looking for a senior IC or lead role where I can scale this kind of impact — in a larger team, with more complex systems challenges, and commensurate compensation.</p>
       </div>
-      <div class="timeline">
+      <div>
         <div class="tl-item"><div class="tl-date">Jun 2024 – Present</div><div class="tl-role">People Ops & Systems Analyst</div><div class="tl-co">Nuro · Systems & Automation</div></div>
         <div class="tl-item"><div class="tl-date">Jul 2022 – Jun 2024</div><div class="tl-role">Talent Management Program Manager</div><div class="tl-co">Nuro</div></div>
         <div class="tl-item"><div class="tl-date">Apr 2022 – Jul 2022</div><div class="tl-role">Recruiting Coordinator</div><div class="tl-co">Nuro</div></div>
         <div class="tl-item"><div class="tl-date">Oct 2021 – Apr 2022</div><div class="tl-role">Recruiting Coordinator</div><div class="tl-co">Google (via Nelson Staffing)</div></div>
       </div>
     </div>
-
     <div class="contact-section">
       <div>
         <h2>Let's talk systems.</h2>
-        <p>Open to senior HRIS, People Systems, or HR AI Automation roles — ideally L5 equivalent.</p>
+        <p>Open to senior HRIS, People Systems, or HR AI Automation roles.</p>
       </div>
       <div class="contact-links">
-        <a class="contact-link" href="/cdn-cgi/l/email-protection#a3c6cfd0c2d4cccdcdc4e3c4cec2cacf8dc0ccce">✉ <span class="__cf_email__" data-cfemail="12777e6173657d7c7c7552757f737b7e3c717d7f">[email&#160;protected]</span></a>
+        <a class="contact-link" href="mailto:elsawonng@gmail.com">✉ elsawonng@gmail.com</a>
         <a class="contact-link" href="https://linkedin.com/in/elsawonng/">↗ linkedin.com/in/elsawonng</a>
         <a class="contact-link" href="tel:5103328817">☎ 510-332-8817</a>
       </div>
@@ -419,16 +403,37 @@
   </div>
 
 </div>
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
-  function showSection(id) {
-    document.querySelectorAll('.section').forEach(s => s.classList.remove('visible'));
-    document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
-    document.getElementById('sec-' + id).classList.add('visible');
-    document.getElementById('btn-' + id).classList.add('active');
+
+<script>
+function showSection(id) {
+  var sections = document.querySelectorAll('.section');
+  for (var i = 0; i < sections.length; i++) {
+    sections[i].classList.remove('visible');
   }
-  function toggleDetail(id) {
-    const panel = document.getElementById(id);
-    const isOpen = panel.classList.contains('open');
-    document.querySelectorAll('.detail-panel').forEach(p => p.classList.remove('open'));
-    if (!isOpen) {
-      panel.classList.add('open');
+  var btns = document.querySelectorAll('.nav-btn');
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].classList.remove('active');
+  }
+  document.getElementById('sec-' + id).classList.add('visible');
+  document.getElementById('btn-' + id).classList.add('active');
+}
+
+function toggleDetail(id, btn) {
+  var panel = document.getElementById(id);
+  var isOpen = panel.classList.contains('open');
+  var allPanels = document.querySelectorAll('.detail-panel');
+  var allToggles = document.querySelectorAll('.card-toggle');
+  for (var i = 0; i < allPanels.length; i++) {
+    allPanels[i].classList.remove('open');
+  }
+  for (var i = 0; i < allToggles.length; i++) {
+    allToggles[i].textContent = '▸ View project details';
+  }
+  if (!isOpen) {
+    panel.classList.add('open');
+    btn.textContent = '▾ Hide project details';
+  }
+}
+</script>
+</body>
+</html>
